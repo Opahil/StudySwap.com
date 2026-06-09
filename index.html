@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>StudySwap — Learn, Teach & Exchange</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand">
+          <div class="logo">SS</div>
+          <div class="brand-text">
+            <div class="name">StudySwap</div>
+            <div class="sub">Bangladesh • Learn • Earn • Exchange</div>
+          </div>
+        </div>
+        <button class="profile-btn">Profile</button>
+      </header>
+
+      <section class="hero">
+        <h1>Learn together. Earn by teaching.</h1>
+        <p>Find tutors, sell or exchange books, join study rooms, and receive payments via bKash.</p>
+        <div class="hero-actions">
+          <button id="open-tutor-form" class="btn primary">Become a Tutor</button>
+          <button id="open-room-form" class="btn outline">Create Room</button>
+        </div>
+      </section>
+
+      <main class="container">
+        <section class="panel" id="tutors">
+          <div class="panel-head"><h2>Top Tutors</h2><a href="#">See all</a></div>
+          <div id="tutor-list" class="list-row">Loading tutors...</div>
+        </section>
+
+        <section class="panel" id="books">
+          <div class="panel-head"><h2>Books Marketplace</h2><a href="#">See all</a></div>
+          <div id="book-list" class="list-row">Loading books...</div>
+          <div class="panel-foot"><button id="open-book-form" class="btn primary small">Sell / Exchange Book</button></div>
+        </section>
+
+        <section class="panel" id="rooms">
+          <div class="panel-head"><h2>Study Rooms</h2><a href="#">Explore</a></div>
+          <div id="room-list" class="list-row">Loading rooms...</div>
+        </section>
+      </main>
+
+      <nav class="bottombar">
+        <button class="bb-btn active">Home</button>
+        <button class="bb-btn">Chats</button>
+        <button class="bb-btn">Wallet</button>
+        <button class="bb-btn">More</button>
+      </nav>
+    </div>
+
+    <template id="tutor-item-tpl">
+      <div class="card-item tutor-item">
+        <div class="avatar">U</div>
+        <div class="meta">
+          <div class="title"></div>
+          <div class="sub"></div>
+        </div>
+        <div class="actions">
+          <button class="hire-btn small">Hire</button>
+        </div>
+      </div>
+    </template>
+
+    <template id="book-item-tpl">
+      <div class="card-item book-item">
+        <div class="meta">
+          <div class="title"></div>
+          <div class="sub"></div>
+        </div>
+        <div class="actions">
+          <button class="buy-btn small">Buy</button>
+        </div>
+      </div>
+    </template>
+
+    <template id="room-item-tpl">
+      <div class="card-item room-item">
+        <div class="meta">
+          <div class="title"></div>
+          <div class="sub"></div>
+        </div>
+        <div class="actions">
+          <button class="join-btn small">Join</button>
+        </div>
+      </div>
+    </template>
+
+    <div id="modals"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
